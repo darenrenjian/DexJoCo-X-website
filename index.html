@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DexJoCo-X: a benchmark and dataset for multi-hand dexterous manipulation, with seven hands, six tasks, and 2,100 demonstrations.">
+  <meta name="theme-color" content="#f8f9f6">
+  <meta property="og:title" content="DexJoCo-X — Multi-Hand Dexterous Manipulation">
+  <meta property="og:description" content="Seven hands. Six tasks. A common benchmark for dexterous robot learning.">
+  <meta property="og:image" content="https://darenrenjian.github.io/DexJoCo-X-website/assets/overview.webp">
+  <meta property="og:url" content="https://darenrenjian.github.io/DexJoCo-X-website/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>DexJoCo-X · Multi-Hand Dexterous Manipulation</title>
+  <link rel="canonical" href="https://darenrenjian.github.io/DexJoCo-X-website/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="project.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#"><span class="brand-mark">D<span>×</span></span>DexJoCo-X</a>
+      <div class="nav-links"><a href="#overview">Overview</a><a href="#tasks">Tasks</a><a href="#collection">Collection</a><a href="#resources">Resources</a></div>
+      <a class="nav-paper" href="assets/paper.pdf" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap">
+      <div class="eyebrow"><span class="status-dot"></span> MULTI-HAND DEXTEROUS MANIPULATION</div>
+      <h1>DexJoCo<span class="hero-x">-X</span></h1>
+      <p class="paper-title">Benchmarking Action Representations<br class="desktop-break"> for Multi-Hand Dexterous Manipulation</p>
+      <div class="authors" id="authors" hidden></div>
+      <p class="hero-description">Seven different hands. Shared manipulation tasks.<br>A common foundation for studying how dexterous skills transfer across morphologies.</p>
+      <div class="hero-actions" aria-label="Project links">
+        <a class="button button-dark" href="assets/paper.pdf" target="_blank" rel="noopener"><span aria-hidden="true">▤</span> Paper PDF</a>
+        <a class="button" id="arxiv-link" aria-disabled="true"><span aria-hidden="true">↗</span> arXiv <span class="soon">soon</span></a>
+        <a class="button" id="code-link" aria-disabled="true"><span aria-hidden="true">⌘</span> Code <span class="soon">soon</span></a>
+        <a class="button" id="data-link" aria-disabled="true"><span aria-hidden="true">▦</span> Dataset <span class="soon">soon</span></a>
+        <a class="button" href="#video"><span aria-hidden="true">▷</span> Video</a>
+      </div>
+      <div class="stats" aria-label="Benchmark scale">
+        <div><strong>7</strong><span>dexterous hands</span></div>
+        <div><strong>6</strong><span>manipulation tasks</span></div>
+        <div><strong>2,100</strong><span>demonstrations</span></div>
+        <div><strong>42</strong><span>hand–task pairs</span></div>
+      </div>
+      <figure class="hero-figure figure-card">
+        <button class="figure-button" data-figure="assets/overview.webp" data-title="DexJoCo-X benchmark overview" aria-label="Enlarge benchmark overview">
+          <img src="assets/overview.webp" width="2200" height="1229" alt="DexJoCo-X overview: seven hand morphologies, a demonstration collection pipeline, and matched six-task policy evaluation." fetchpriority="high">
+          <span class="expand-label" aria-hidden="true">↗ Enlarge</span>
+        </button>
+        <figcaption>A shared benchmark connecting diverse hands, balanced demonstrations, and consistent evaluation.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section wrap" id="overview">
+      <div class="section-heading"><span class="section-number">01</span><div><p class="eyebrow">THE RESEARCH QUESTION</p><h2>How do we learn across different hands?</h2></div></div>
+      <div class="intro-grid">
+        <p class="lead">Robot hands differ in their kinematics, actuation, and control. DexJoCo-X makes it possible to compare action representations using the same tasks, demonstrations, scenes, and success criteria.</p>
+        <p>Our study examines how action coordinates interact with pretraining and model architecture. We compare Native coordinates, function-aligned slots (FAAS), and learned cross-hand latents (DexLatent), alongside per-hand π<sub>0.5</sub> (Ego-Pi) and joint seven-hand Being-H0.5 policies.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card blue"><span class="feature-icon" aria-hidden="true">◎</span><h3>A matched benchmark</h3><p>Common scenes, success rules, and execution interfaces across all 42 hand–task pairs.</p></article>
+        <article class="feature-card sage"><span class="feature-icon" aria-hidden="true">▦</span><h3>A balanced dataset</h3><p>50 demonstrations per pair, with synchronized RGB, robot states, actions, and masks.</p></article>
+        <article class="feature-card lavender"><span class="feature-icon" aria-hidden="true">⇄</span><h3>Reusable evaluation</h3><p>Connect your own policy to the same simulator and compare representations under consistent conditions.</p></article>
+      </div>
+      <div class="hands-strip" aria-label="Seven hand embodiments"><span>Allegro</span><span>Inspire</span><span>LEAP</span><span>LinkerHand</span><span>Sharpa Wave</span><span>Wuji</span><span>XHand</span></div>
+    </section>
+
+    <section class="video-section" id="video">
+      <div class="wrap">
+        <div class="section-heading"><span class="section-number">02</span><div><p class="eyebrow">SEE IT IN ACTION</p><h2>One task, seven embodiments.</h2></div></div>
+        <p class="section-description">Watch the benchmark overview and recorded simulation demonstrations across all seven hands.</p>
+        <div class="video-frame"><video controls playsinline preload="none" poster="assets/video-poster.jpg" aria-label="DexJoCo-X narrated overview video"><source src="assets/overview.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/overview.mp4">Download it here.</a></video></div>
+        <p class="media-note">Recorded demonstrations in simulation · 2 min 40 sec</p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="tasks">
+      <div class="section-heading"><span class="section-number">03</span><div><p class="eyebrow">SIX COMPLEMENTARY TASKS</p><h2>From tool use to bimanual coordination.</h2></div></div>
+      <div class="task-groups"><div><span class="task-group-label">SINGLE ARM</span><p>Bucket lifting <span>·</span> Nail hammering <span>·</span> Tower of Hanoi</p></div><div><span class="task-group-label">BIMANUAL</span><p>Microwave cooking <span>·</span> iPad unlocking <span>·</span> Photography</p></div></div>
+      <figure class="figure-card"><button class="figure-button" data-figure="assets/tasks.webp" data-title="Six tasks and their success conditions" aria-label="Enlarge six-task figure"><img src="assets/tasks.webp" width="2200" height="1484" loading="lazy" alt="Six illustrated task sequences, including bucket lifting, hammering, Hanoi, microwave cooking, iPad unlocking, and photography, with task success conditions."><span class="expand-label" aria-hidden="true">↗ Enlarge</span></button><figcaption>Task-specific success rules cover grasp stability, tool use, sequencing, and coordinated manipulation.</figcaption></figure>
+      <div class="protocol-note"><strong>Consistent evaluation</strong><p>Three independent runs of 50 rollouts per hand–task pair. Every pair receives equal weight in the full-grid macro-average.</p></div>
+    </section>
+
+    <section class="section wrap" id="collection">
+      <div class="section-heading"><span class="section-number">04</span><div><p class="eyebrow">DEMONSTRATION COLLECTION</p><h2>From human motion to balanced data.</h2></div></div>
+      <p class="section-description">Seven glove-to-hand mappings support demonstration recording. Automated scene expansion and verification produce the balanced training dataset.</p>
+      <figure class="figure-card"><button class="figure-button" data-figure="assets/collection.webp" data-title="Demonstration collection pipeline" aria-label="Enlarge collection pipeline"><img src="assets/collection.webp" width="2200" height="1271" loading="lazy" alt="Cartoon diagram of glove and tracker capture, mappings to seven hands, and automated demonstration expansion and verification."><span class="expand-label" aria-hidden="true">↗ Enlarge</span></button><figcaption>Reviewed source demonstrations are expanded, replayed, verified, and exported with synchronized observations and commands.</figcaption></figure>
+    </section>
+
+    <section class="section wrap" id="representations">
+      <div class="section-heading"><span class="section-number">05</span><div><p class="eyebrow">ACTION REPRESENTATIONS</p><h2>Shared skills, morphology-specific control.</h2></div></div>
+      <p class="section-description">Native, FAAS, and DexLatent share arm control and execution conditions. Their hand-action representations are decoded into each embodiment's native commands.</p>
+      <figure class="figure-card representation-figure"><button class="figure-button" data-figure="assets/representations.webp" data-title="Action representations and policy inference" aria-label="Enlarge action representation figure"><img src="assets/representations.webp" width="2200" height="1765" loading="lazy" alt="Native coordinates, function-aligned slots and latent encoders, with Ego-Pi interleaved prediction and Being-H0.5 policy inference."><span class="expand-label" aria-hidden="true">↗ Enlarge</span></button><figcaption>Representation, pretraining, and architecture jointly shape multi-hand learning.</figcaption></figure>
+    </section>
+
+    <section class="resources-section" id="resources"><div class="wrap">
+      <div class="section-heading"><span class="section-number">06</span><div><p class="eyebrow">BUILD ON DEXJOCO-X</p><h2>Paper, data, and evaluation.</h2></div></div>
+      <div class="resource-grid">
+        <article class="resource-card"><span class="resource-kicker">READ</span><h3>The paper</h3><p>The benchmark design, action representations, and multi-hand learning study.</p><a href="assets/paper.pdf" target="_blank" rel="noopener">Read PDF <span aria-hidden="true">↗</span></a></article>
+        <article class="resource-card"><span class="resource-kicker">TRAIN</span><h3>The dataset</h3><p>2,100 demonstrations in six task packages, with native tensors, RGB videos, and checksums.</p><a id="data-resource" aria-disabled="true">Release in preparation</a></article>
+        <article class="resource-card"><span class="resource-kicker">EVALUATE</span><h3>The code</h3><p>Simulation environments, evaluation interfaces, data conversion, and a π<sub>0.5</sub> inference example.</p><a id="code-resource" aria-disabled="true">Release in preparation</a></article>
+      </div>
+      <div class="citation-card" id="citation-card" hidden><div><h3>Citation</h3><button id="copy-citation" class="copy-button">Copy BibTeX</button></div><pre id="citation"></pre><span id="copy-status" class="sr-only" aria-live="polite"></span></div>
+    </div></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="#"><span class="brand-mark">D<span>×</span></span>DexJoCo-X</a><p>A common benchmark for multi-hand dexterous manipulation.</p><a href="#main">Back to top ↑</a></footer>
+  <dialog id="figure-dialog" aria-labelledby="dialog-title"><div class="dialog-toolbar"><h2 id="dialog-title"></h2><div><button id="figure-zoom" class="copy-button">Original size</button><button id="figure-close" class="dialog-close" aria-label="Close enlarged figure">×</button></div></div><div class="dialog-content"><img id="dialog-image" alt=""></div></dialog>
+</body>
+</html>
