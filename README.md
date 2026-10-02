@@ -6,7 +6,7 @@ Project page: https://darenrenjian.github.io/DexJoCo-X-website/
 
 Xiangwei Jiang, Yao Mu, Lixin Duan, and Wen Li (corresponding author).
 
-This repository contains the static project website, paper PDF, original schematic illustrations rendered for the web, and overview video. The arXiv link will be added when the preprint is available. Benchmark code and dataset availability are shown on the website independently.
+This repository contains the static project website, paper PDF, original schematic illustrations rendered for the web, and overview video. The preprint was submitted to arXiv on October 2, 2026. Its link and BibTeX will be added after announcement. Benchmark code and dataset availability are shown on the website independently.
 
 To preview locally:
 

@@ -11,6 +11,11 @@
     if (label) link.textContent = label;
   };
   setLink("arxiv-link", config.arxivUrl, Boolean(config.arxivUrl));
+  if (!config.arxivUrl && config.arxivStatus === "submitted") {
+    const link = document.getElementById("arxiv-link");
+    link.querySelector(".soon").textContent = "submitted";
+    link.setAttribute("aria-label", "arXiv preprint submitted; public link pending");
+  }
   setLink("code-link", config.codeUrl, config.codePublic);
   setLink("data-link", config.datasetUrl, config.datasetPublic);
   setLink("code-resource", config.codeUrl, config.codePublic, "Explore code ↗");
