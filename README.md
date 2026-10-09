@@ -1,6 +1,6 @@
 # DexJoCo-X project website
 
-Project page: https://darenrenjian.github.io/DexJoCo-X-website/
+Project page: https://jxw-wei.github.io/DexJoCo-X-website/
 
 **DexJoCo-X: Benchmarking Action Representations for Multi-Hand Dexterous Manipulation**
 
