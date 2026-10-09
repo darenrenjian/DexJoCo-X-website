@@ -15,7 +15,7 @@ window.DEXJOCO_PROJECT = {
   authorNote: "* Corresponding author: Wen Li",
   arxivUrl: "https://arxiv.org/abs/2610.03278",
   arxivStatus: "announced",
-  codeUrl: "https://github.com/darenrenjian/DexJoCo-X-public",
+  codeUrl: "https://github.com/dexjoco-x/DexJoCo-X-public",
   datasetUrl: "https://huggingface.co/datasets/darenrenjian/DexJoCo-X",
   codePublic: false,
   datasetPublic: true,
